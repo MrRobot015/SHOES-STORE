@@ -161,3 +161,37 @@ nav {
 .slider-item:nth-child(5) .slide-price {
     color: cornsilk;
 }
+
+/*=== feature style  ===*/
+.features{
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-icon{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.feature-title{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px;
+}
+
+.feature-desc{
+    color: gray;
+    max-width: 50%;
+    max-height: 100px;
+}
