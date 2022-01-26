@@ -1,23 +1,23 @@
-body{
-    font-family: 'Lato', sans-serif;
+body {
+    font-family: "Lato", sans-serif;
     margin: 0;
     padding: 0;
 }
 
 /*=== navbar style ===*/
-nav{
+nav {
     background-color: #111;
     color: white;
     padding: 20px 15px;
 }
 
-.nav-top{
+.nav-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.search{
+.search {
     display: flex;
     align-items: center;
     background-color: gray;
@@ -25,37 +25,139 @@ nav{
     border-radius: 10px;
 }
 
-.search-input{
+.search-input {
     border: none;
     background-color: transparent;
 }
 
-.search-input::placeholder{
+.search-input::placeholder {
     color: lightgray;
 }
 
-.limited-offer{
+.limited-offer {
     font-size: 20px;
-    border-bottom: 2px solid green ;
+    border-bottom: 2px solid green;
     cursor: pointer;
 }
- .search img{
-     width: 20px;
-     height: 20px;
- }
+.search img {
+    width: 20px;
+    height: 20px;
+}
 
- .nav-bottom{
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
+.nav-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
- .menu-item{
-     margin-right: 50px;
-     text-transform: uppercase;
-     font-weight: 400;
-     cursor: pointer;
- }
+.menu-item {
+    margin-right: 50px;
+    text-transform: uppercase;
+    font-weight: 400;
+    cursor: pointer;
+}
 
+/*=== slider style ===*/
 
- /*=== slider style ===*/
+.slider {
+    background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    display: flex;
+    min-width: 500vw;
+    transition: all 1s ease-in-out;
+}
+
+.slide-img {
+    z-index: 1;
+}
+
+.slider-item {
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slide-Bg {
+    min-height: 750px;
+    min-width: 750px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.slide-title {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.slide-price {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-weight: 300;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    border: 1px solid gray;
+    z-index: 1;
+}
+
+.buy-button {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    font-weight: 900;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.slider-item:nth-child(1) .slide-Bg {
+    background-color: #369e62;
+}
+.slider-item:nth-child(2) .slide-Bg {
+    background-color: rebeccapurple;
+}
+.slider-item:nth-child(3) .slide-Bg {
+    background-color: teal;
+}
+.slider-item:nth-child(4) .slide-Bg {
+    background-color: cornflowerblue;
+}
+.slider-item:nth-child(5) .slide-Bg {
+    background-color: rgb(124, 115, 80);
+}
+
+.slider-item:nth-child(1) .slide-price {
+    color: #369e62;
+}
+.slider-item:nth-child(2) .slide-price {
+    color: white;
+}
+.slider-item:nth-child(3) .slide-price {
+    color: teal;
+}
+.slider-item:nth-child(4) .slide-price {
+    color: cornflowerblue;
+}
+.slider-item:nth-child(5) .slide-price {
+    color: cornsilk;
+}
